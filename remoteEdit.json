@@ -1,0 +1,1 @@
+{"hostList":[{"alias":"snowflake","hostname":"146.148.21.70","directory":"/","username":"sazulay","port":"22","localFiles":[],"useKeyboard":false,"useAgent":false,"usePrivateKey":true,"usePassword":false,"password":"","passphrase":"","privateKeyPath":"/home/sazulay/.ssh/id_rsa","deserializer":"SftpHost"}],"deserializer":"InterProcessData"}

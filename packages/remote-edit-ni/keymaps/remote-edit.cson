@@ -1,0 +1,48 @@
+# Keybindings require three things to be fully defined: A selector that is
+# matched against the focused element, the keystroke and the command to
+# execute.
+#
+# Below is a basic keybinding which registers on all platforms by applying to
+# the root workspace element.
+
+# For more detailed documentation see
+# https://atom.io/docs/latest/advanced/keymaps
+'.platform-darwin':
+  'cmd-r b': 'remote-edit:browse'
+  'cmd-r o': 'remote-edit:show-open-files'
+  'cmd-r v': 'remote-edit:toggle-files-view'
+  'cmd-r f': 'filesview:list-focus'
+  'cmd-r m': 'remote-edit:browse-more'
+  'cmd-r d': 'remote-edit:close-all-connections'
+
+'.platform-win32, .platform-linux':
+  'alt-r b': 'remote-edit:browse'
+  'alt-r o': 'remote-edit:show-open-files'
+  'alt-r v': 'remote-edit:toggle-files-view'
+  'alt-r f': 'filesview:list-focus'
+  'alt-r m': 'remote-edit:browse-more'
+  'alt-r d': 'remote-edit:close-all-connections'
+
+'.open-files-view.select-list':
+  'shift-d': 'openfilesview:delete'
+
+'.hosts-view.select-list':
+  'shift-a': 'remote-edit:new-sftp-host'
+  'shift-s': 'remote-edit:new-sftp-host'
+  'shift-f': 'remote-edit:new-ftp-host'
+  'shift-d': 'hostview:delete'
+  'shift-e': 'hostview:edit'
+
+'.files-view.select-list':
+  'shift-o': 'filesview:open'
+
+'.host-view':
+  'tab': 'host-view:focus-next'
+  'shift-tab': 'host-view:focus-previous'
+
+'.remote-edit-tree-views':
+  'backspace': 'filesview:previous-folder'
+  'up': 'filesview:list-select-prev'
+  'down': 'filesview:list-select-next'
+  'enter': 'filesview:list-enter'
+  'escape': 'filesview:hide'

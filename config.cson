@@ -1,0 +1,10 @@
+"*":
+  core: {}
+  editor:
+    fontSize: 15
+    preferredLineLength: 120
+    softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "0ac34656-840b-4259-a985-dcb1b1a8a93a"
+  "hydrogen-launcher": {}
+  "remote-edit-ni": {}
